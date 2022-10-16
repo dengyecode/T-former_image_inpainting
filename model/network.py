@@ -70,8 +70,6 @@ class Generator(nn.Module):
         )
 
     def forward(self, x, mask=None):
-        noise = torch.normal(mean=torch.zeros_like(x), std=torch.ones_like(x) * (1. / 128.))
-        x = x + noise
         feature = torch.cat([x, mask], dim=1)
         feature256 = self.start(feature)
 
