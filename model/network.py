@@ -150,7 +150,7 @@ class TransformerEncoder(nn.Module):
 
     def forward(self, x):
         x = self.attn(x) + x
-        x = self.feed_forward(x) + x
+        x = self.feed_forward(x)
         return x
 
 
