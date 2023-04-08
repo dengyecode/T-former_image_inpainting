@@ -1,4 +1,4 @@
-# $T$-former: An Efficient Transformer for Image Inpainting (ACM MM 2022)
+# T-former: An Efficient Transformer for Image Inpainting (ACM MM 2022)
 
 # train:
 python train.py --no_flip --no_rotation --no_augment --image_file your_data --lr 1e-4
