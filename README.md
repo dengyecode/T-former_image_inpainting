@@ -7,7 +7,7 @@ python train.py --no_flip --no_rotation --no_augment --img_file your_data --lr 1
 # fine_tune:
 python train.py --no_flip --no_rotation --no_augment --img_file your_data --lr 1e-5 --continue_train
 # test:
-python test.py --mask_type 3 --image_file your_data --mask_file your_mask --continue_train
+python test.py --batchSize 1 --mask_type 3 --img_file your_data --mask_file your_mask your_data
 
 
 ## Citation
